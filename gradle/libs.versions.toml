@@ -1,0 +1,34 @@
+[versions]
+agp = "8.9.1" # 非常新的 AGP 版本，请确保 Android Studio 版本兼容
+kotlin = "2.0.21" # 非常新的 Kotlin 版本，请确保 Android Studio 版本兼容
+coreKtx = "1.10.1"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+lifecycleRuntimeKtx = "2.6.1"
+activityCompose = "1.8.0"
+composeBom = "2024.09.00" # 请仔细核对此 BOM 版本号的准确性
+androidxMaterial3Version = "1.3.0"
+navigationFragmentKtx = "2.9.0" # 修改：使用已发布的稳定版本 1.3.0
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" } # 版本应由 BOM 控制
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" } # 版本应由 BOM 控制
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" } # 版本应由 BOM 控制
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" } # 版本应由 BOM 控制
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" } # 版本应由 BOM 控制
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" } # 版本应由 BOM 控制
+androidx-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "androidxMaterial3Version" }
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" } # 使用上面定义的版本
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }

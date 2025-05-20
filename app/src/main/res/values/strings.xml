@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_title">电子罚单系统Ciallo～(∠・ω&lt; )⌒★</string>
+    <string name="app_name">电子罚单系统</string>
+    <!-- Connection Fragment -->
+
+    <string name="unknown_device">未知设备</string>
+    <string name="status_not_connected">未连接设备</string>
+    <string name="no_device_selected">未选择设备</string>
+    <string name="scan_devices_button">扫描设备</string>
+    <string name="rescan_devices_button">重新扫描</string>
+    <string name="disconnect_button">断开连接</string>
+    <string name="status_scanning">正在扫描…</string>
+    <string name="status_scan_finished_select_device">扫描完成，请选择设备连接</string>
+    <string name="status_no_devices_found">未发现设备</string>
+    <string name="status_scan_failed">扫描失败：%1$s</string>
+    <string name="status_connecting_to">正在连接到：%1$s</string>
+    <string name="status_connected_to_ble">已连接到：%1$s</string>
+    <string name="connected_device_label">已连接设备：</string>
+    <string name="status_disconnecting">正在断开连接…</string>
+    <string name="previous_device_placeholder">之前的设备</string>
+    <string name="status_disconnected_from">已断开与 %1$s 的连接</string>
+    <string name="status_connection_failed">连接失败：%1$s</string>
+    <string name="rssi_format">RSSI: %1$d dBm</string>
+    <string name="connect_button">连接</string>
+    <string name="services_header">服务列表</string>
+    <string name="service_label">Service: %1$s</string>
+    <string name="characteristics_label_prefix">\n特性：</string>
+    <string name="characteristic_properties_label">%1$s</string>
+    <string name="no_characteristics_found_or_accessible">\n无可用特性</string>
+    <string name="no_services_found_or_accessible">未找到可用服务</string>
+    <string name="property_read">Read</string>
+    <string name="property_write">Write</string>
+    <string name="property_write_no_response">WriteNoResponse</string>
+    <string name="property_notify">Notify</string>
+    <string name="property_indicate">Indicate</string>
+    <string name="select_characteristic_button">操作特性</string>
+    <string name="select_characteristic_first">请先选择一个特性</string>
+    <string name="selected_characteristic">已选择用于MCU通信的特性：</string>
+    <string name="select_operation">选择操作</string>
+    <string name="operation_read">读取</string>
+    <string name="operation_write">写入</string>
+    <string name="operation_toggle_notifications">切换通知</string>
+    <string name="cancel">取消</string>
+    <string name="no_operations_available">该特性没有可用操作</string>
+    <string name="enter_value_to_write">输入要写入的值</string>
+    <string name="write">写入</string>
+    <string name="write_value_hint">输入要写入的文本…</string>
+    <string name="empty_input_error">请输入要写入的内容</string>
+
+    <!-- NFC Operations Fragment -->
+    <string name="json_message_header">JSON 消息</string>
+    <string name="json_message_hint">输入要写入NFC标签或发送到MCU的JSON数据…</string>
+    <string name="write_to_nfc_button">写入NFC标签</string>
+    <string name="write_to_mcu_button">发送到MCU</string>
+    <string name="nfc_read_header">NFC读取数据</string>
+    <string name="nfc_read_data_hint">靠近NFC标签以读取数据…</string>
+    <string name="json_empty_error">JSON数据不能为空</string>
+
+    <!-- Bluetooth Operations Status -->
+    <string name="operation_successful">操作 "%1$s" 成功</string>
+    <string name="read_from_characteristic_success">从 %1$s 读取成功：%2$s</string>
+    <string name="write_to_characteristic_success">写入 %1$s 成功</string>
+    <string name="notifications_change_success">%1$s 的通知已%2$s</string>
+    <string name="enabled_text">启用</string>
+    <string name="disabled_text">禁用</string>
+    <string name="operation_failed">操作 "%1$s" 失败：%2$s</string>
+    <string name="read_from_characteristic_failed">从 %1$s 读取失败：%2$s</string>
+    <string name="write_to_characteristic_failed">写入 %1$s 失败：%2$s</string>
+    <string name="notifications_change_failed">更改 %1$s 通知状态失败：%2$s</string>
+    <string name="general_error_message">错误：%1$s</string>
+    <string name="data_ready_for_nfc">数据已准备好写入NFC：%1$s</string>
+
+    <!-- NFC Operations Status -->
+    <string name="nfc_not_supported">此设备不支持NFC</string>
+    <string name="nfc_disabled">NFC已禁用，请在设置中启用</string>
+    <string name="status_nfc_reading_for_write">靠近NFC标签以写入数据</string>
+    <string name="nfc_tag_not_ndef_compatible">NFC标签不兼容NDEF格式</string>
+    <string name="nfc_tag_not_writable">NFC标签不可写入</string>
+    <string name="nfc_tag_too_small">NFC标签容量不足</string>
+    <string name="nfc_write_success_toast">NFC标签写入成功</string>
+    <string name="nfc_write_failed_toast">NFC标签写入失败：%1$s</string>
+    <string name="nfc_tag_read_toast">已读取NFC标签</string>
+    <string name="nfc_tag_no_ndef_records">NFC标签没有NDEF记录</string>
+    <string name="nfc_tag_empty">NFC标签为空</string>
+    <string name="nfc_tag_empty_or_no_records">NFC标签为空或没有记录</string>
+    <string name="nfc_tag_not_ndef_or_empty_with_id">NFC标签ID: %1$s (非NDEF格式或为空)</string>
+    <string name="nfc_parse_error_rtd_text">无法解析TEXT记录 (raw: %1$s)</string>
+    <string name="nfc_unparsed_data_display">类型: %1$s\nHEX: %2$s\nASCII: %3$s</string>
+
+    <!-- Permissions -->
+    <string name="bluetooth_permissions_required_for_scan">需要蓝牙权限才能扫描设备</string>
+    <string name="permissions_required">需要权限</string>
+    <string name="bluetooth_permissions_explanation">需要蓝牙和位置权限才能扫描设备和连接蓝牙设备。请在设置中授予这些权限。</string>
+    <string name="go_to_settings">前往设置</string>
+    <string name="permissions_granted_toast">已授予所有必要权限</string>
+    <string name="permissions_denied_toast">未授予所有必要权限，某些功能可能无法正常工作</string>
+    <string name="bluetooth_enable_failed">无法启用蓝牙，请在设置中手动启用</string>
+    <string name="status_bluetooth_not_enabled">蓝牙未启用，请启用蓝牙</string>
+    <string name="bluetooth_permissions_required">需要蓝牙权限</string>
+
+    <!-- Errors -->
+    <string name="error_no_ble_characteristic_selected">未选择BLE特性</string>
+    <string name="error_connection_fragment_not_found">无法找到连接界面</string>
+    <string name="error_no_characteristic_selected">未选择特性，请先选择一个特性</string>
+</resources>

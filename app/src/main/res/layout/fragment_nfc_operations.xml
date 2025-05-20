@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".NfcOperationsFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/json_message_header"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etJsonMessage"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@android:drawable/editbox_background"
+        android:gravity="top|start"
+        android:hint="@string/json_message_hint"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:padding="8dp"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnWriteToNfc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:text="@string/write_to_nfc_button" />
+
+        <Button
+            android:id="@+id/btnWriteToMcu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:text="@string/write_to_mcu_button" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nfc_read_header"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:drawable/editbox_background"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tvNfcReadData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nfc_read_data_hint"
+            android:textIsSelectable="true" />
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 雾蓝色色系 -->
+    <color name="primary">#5C7B93</color>          <!-- 主雾蓝色 -->
+    <color name="primary_variant">#455A6E</color>   <!-- 深雾蓝色 -->
+    <color name="primary_light">#8EABC3</color>     <!-- 浅雾蓝色 -->
+
+    <color name="secondary">#78909C</color>         <!-- 次要颜色 - 灰蓝色 -->
+    <color name="secondary_variant">#4B636E</color> <!-- 深灰蓝色 -->
+
+    <!-- 系统颜色 -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="divider">#BDBDBD</color>
+
+    <!-- 状态颜色 -->
+    <color name="success">#4CAF50</color>
+    <color name="error">#F44336</color>
+    <color name="warning">#FFC107</color>
+    <color name="info">#2196F3</color>
+</resources>
